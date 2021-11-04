@@ -19,3 +19,4 @@ class Cache():
     
     def write_to_cache(self, address, value):
         self.cache.append(tuple(address,value))
+        print("Added,",value,"to cache address:",address)

@@ -1,4 +1,4 @@
-MEMORY_BUS_SIZE = 64
+MEMORY_BUS_SIZE = 128
 
 class Memory_Bus:
     def __init__(self):
@@ -7,12 +7,12 @@ class Memory_Bus:
     
     def init_memory_bus(self):
         for i in range(MEMORY_BUS_SIZE):
-            self.memory_bus['{0.08b}'.format(i)] = 0
+            self.memory_bus['{0:08b}'.format(i)] = 0
     
-    def write_memory_bus(self,address,value):
+    def write_to_memory_bus(self,address,value):
         if self.memory_bus.get(address) is not None:
             self.memory_bus[address] = value
     
-    def find_memory_bus(self,address):
+    def search_in_memory_bus(self,address):
         if self.memory_bus.get(address) is not None:
             return self.memory_bus[address]
