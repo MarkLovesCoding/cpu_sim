@@ -105,5 +105,5 @@ class CPU:
     def print_registers(self):
         print("---Registers---")
         for i in range(len(self.registers)):
-            print("R{0}: {1}".format(i,self.registers[i]))
+            print("R{0}: {1}".format(i+1,self.registers[i]))
     
