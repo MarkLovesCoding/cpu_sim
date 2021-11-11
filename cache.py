@@ -1,6 +1,6 @@
 import collections
 
-CACHE_SIZE = 8
+CACHE_SIZE = 4
 
 class Cache():
     def __init__(self):
